@@ -1,0 +1,177 @@
+{% load static  %}
+
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Terrarium</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'Terrarium_App/css/main.css'%}" />
+		<noscript><link rel="stylesheet" href="{% static 'Terrarium_App/css/noscript.css'%}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="home.html">Terrarium Home</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					 <nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="home.html">Home</a></li>
+								<li><a href="graphiques.html">Les graphiques</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+                <!-- Menu_2 -->
+
+
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-gem"></span></div>
+							<h2>Projet Terrarium</h2>
+							<p>Presenté par 4 etudiants isepiens </p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="{% static 'Terrarium_App/images/mqtt-logo.png'%}" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Protocole MQTT</h2>
+										<p>MQTT (Message Queuing Telemetry Transport2) est un protocole de messagerie publish-subscribe basé sur le protocole TCP/IP. Il a été initialement développé par Andy Stanford-Clark (IBM) et Arlen Nipper (EuroTech). Il est conçu pour les connexions avec des sites distants où la bande passante du réseau est limitée.</p>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="{% static 'Terrarium_App/images/django.png'%}" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Application Django</h2>
+										<p>Django est un cadre de développement web open source en Python. Il a pour but de rendre le développement web 2.0 simple et rapide. Pour cette raison, le projet a pour slogan « Le framework pour les perfectionnistes avec des deadlines. ».</p>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="{% static 'Terrarium_App/images/loraserver.png'%}" alt="" /></a>
+									<div class="content">
+										<h2 class="major">LoraServer</h2>
+										<p>LoRaWAN est un protocole de télécommunication permettant la communication à bas débit, par radio, d'objets à faible consommation électrique communiquant selon la technologie LoRa et connectés à l'Internet via des passerelles, participant ainsi à l'Internet des objets. Ce protocole est utilisé dans le cadre des villes intelligentes, le monitoring industriel ou encore l'agriculture.</p>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Notre équipe</h2>
+									<p></p>
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="{% static 'Terrarium_App/images/pic04.png'%}" alt="" /></a>
+											<h3 class="major">Angèle Dutilleul</h3>
+											<center><p> Conception de l'application (templates)</p>
+                                            <p>Html / Css</p></center>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="{% static 'Terrarium_App/images/alexis.png'%}" alt="" /></a>
+											<h3 class="major">Alexis Pinat</h3>
+											<center><p> Mise en place de la communication MQTT </p>
+                                            <p>Python / base de donnée</p></center>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="{% static 'Terrarium_App/images/quentin.png'%}" alt="" /></a>
+											<h3 class="major">Quentin de La Forest Divonne</h3>
+											<center><p> Conception de l'application (templates) et mise en place de Django </p>
+                                            <p>python /Html / Css</p></center>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="{% static 'Terrarium_App/images/lilian.png'%}" alt="" /></a>
+											<h3 class="major">Lilian Ferraton</h3>
+											<center><p> Mise en place du protocole MQTT, documentation sur android studio </p>
+                                            <p> Python / Android studio</p></center>
+										</article>
+									</section>
+									</ul>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									Isep Ndl<br />
+									rue de vanves<br />
+									issy les moulineaux
+								</li>
+								<li class="icon solid fa-phone">(000) 000-0000</li>
+								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; La team Inc. All rights reserved.</li><li>Design: <a > La_team</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+
+		<!-- Scripts -->
+			<script src="{% static 'Terrarium_App/js/jquery.min.js'%}"></script>
+			<script src="{% static 'Terrarium_App/js/jquery.scrollex.min.js'%}"></script>
+			<script src="{% static 'Terrarium_App/js/browser.min.js'%}"></script>
+			<script src="{% static 'Terrarium_App/js/breakpoints.min.js'%}"></script>
+			<script src="{% static 'Terrarium_App/js/util.js'%}"></script>
+			<script src="{% static 'Terrarium_App/js/main.js'%}"></script>
+
+	</body>
+</html>
