@@ -1,0 +1,145 @@
+{% load static  %}
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Les graphs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'Terrarium_App/css/main.css'%}" />
+		<noscript><link rel="stylesheet" href="{% static 'Terrarium_App/css/noscript.css'%}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="home.html">Graph</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="home.html">Home</a></li>
+								<li><a href="graphiques.html">Les graphiques</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Les graphiques</h2>
+								<p></p>
+							</div>
+						</header>
+
+						<!-- Content -->
+
+                           <center> <a href="#" class="image"><img src="{% static 'Terrarium_App/images/graphique.png'%}" alt="Image graphique" /></a></center>
+                        	 <center><body>
+                                <input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="goPython()">
+
+                                <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+                                <script>
+                                    function goPython(){
+                                        $.ajax({
+                                          url: "recup.py",
+                                         context: document.body
+                                        }).done(function() {
+                                         alert('finished python script');
+                                        });
+                                    }
+                                </script>
+                              </body></center>
+
+
+
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Quelques chiffres utiles</h3>
+                                    <p>Aucun animal de terrarium ne produit de propre chaleur (animaux à sang froid), tous sont dépendants de la température ambiante. De nombreux sauriens et autres serpents cherchent activement des emplacements où ils peuvent se réchauffer, soit en raison de la température du sol soit en raison du rayonnement solaire. Ce n'est que lorsqu'ils ont obtenu la bonne température corporelle qu'ils sont performants (chasse) et que leur métabolisme fonctionne normalement.</p>
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="{% static 'Terrarium_App/images/humidité.png'%}" alt="" /></a>
+											<h3 class="major">Humidité</h3>
+											<p>S'il y a beaucoup d'humidité sur les parois de votre terrarium, c'est-à-dire de grosses gouttes d'eau et des plantes peu visibles, ouvrez-le environ 1 heure afin de le laisser s'aérer. La stagnation d'air humide est propice au développement de moisissures et de bactéries.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="{% static 'Terrarium_App/images/temperature.png'%}" alt="" /></a>
+											<h3 class="major">Temperature</h3>
+											<p>Souvent matérialisé par une lampe chauffante ou un tapis chauffant (inaccessibles au pogona), c'est l'endroit où il fera le plus chaud dans le terrarium. On conseille 30-35°C le jour et 25-30°C degrés la nuit. La température à ne pas dépasser est 45°C.</p>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									Isep Ndl<br />
+									rue de vanves<br />
+									issy les moulineaux
+								</li>
+								<li class="icon solid fa-phone">(000) 000-0000</li>
+								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; La team Inc. All rights reserved.</li><li>Design: <a > La_team</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+
+		<!-- Scripts -->
+			<script src="{% static 'Terrarium_App/js/jquery.min.js'%}"></script>
+			<script src="{% static 'Terrarium_App/js/jquery.scrollex.min.js'%}"></script>
+			<script src="{% static 'Terrarium_App/js/browser.min.js'%}"></script>
+			<script src="{% static 'Terrarium_App/js/breakpoints.min.js'%}"></script>
+			<script src="{% static 'Terrarium_App/js/util.js'%}"></script>
+			<script src="{% static 'Terrarium_App/js/main.js'%}"></script>
+
+	</body>
+</html>
